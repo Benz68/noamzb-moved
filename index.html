@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>עברנו כתובת · Silverstein</title>
+<meta name="description" content="Silverstein · שיווק רכבי יוקרה עבר לכתובת חדשה: silversteinmotors.com">
+<link rel="canonical" href="https://silversteinmotors.com/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="https://silversteinmotors.com/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    min-height: 100%; display: flex; align-items: center; justify-content: center;
+    padding: 24px 16px; background: #0E0F11; color: #FFFFFF;
+    font-family: "Heebo", sans-serif; font-weight: 300; text-align: center;
+  }
+  main { max-width: 520px; }
+  .brand { font-family: "Michroma", sans-serif; font-size: clamp(22px, 7vw, 34px); letter-spacing: .18em; }
+  .rule { width: 56px; height: 1px; background: #FFFFFF; margin: 18px auto; opacity: .6; }
+  h1 { font-size: 22px; font-weight: 400; margin-top: 28px; }
+  p { color: #A4AAB0; font-size: 15px; margin-top: 10px; line-height: 1.6; }
+  .go {
+    display: inline-block; margin-top: 26px; padding: 15px 26px;
+    background: #FFFFFF; color: #0E0F11; text-decoration: none;
+    font-family: "Michroma", sans-serif; font-size: 14px; letter-spacing: .08em; direction: ltr;
+    transition: box-shadow .25s;
+  }
+  .go:hover, .go:focus-visible { box-shadow: 0 0 0 1px #fff, 0 0 26px rgba(255,255,255,.55); }
+</style>
+</head>
+<body>
+  <main>
+    <div class="brand">SILVERSTEIN</div>
+    <div class="rule" aria-hidden="true"></div>
+    <h1>עברנו כתובת שונה</h1>
+    <p>כל הרכבים נמצאים עכשיו באתר החדש שלנו.</p>
+    <a class="go" id="go" href="https://silversteinmotors.com/">silversteinmotors.com</a>
+  </main>
+  <script>
+    // keep the page someone asked for (e.g. /terms.html) when sending them to the new address
+    var p = location.pathname + location.hash;
+    if (p && p !== "/" && p !== "/index.html") document.getElementById("go").href = "https://silversteinmotors.com" + p;
+  </script>
+</body>
+</html>
